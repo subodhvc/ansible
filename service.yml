@@ -1,15 +1,15 @@
 ---
 # This playbook tests the script module on Windows hosts
 
-- name: Run powershell script
+- name: Start Windows Service
   hosts: windows
   gather_facts: false
   tasks:
-    - name: Run powershell script 
-      script: test.ps1
-#    - name: Start Service
-#      win_service:
-#        name: bits
-#        state: started
+#    - name: Run powershell script 
+#      script: test.ps1
+    - name: Start BITS Service
+      win_service:
+        name: bits
+        state: started
 
 
