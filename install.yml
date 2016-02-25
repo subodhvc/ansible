@@ -1,0 +1,14 @@
+---
+- name: Install package
+  hosts: windows
+  tasks:
+    - name: Copy JAVA
+      win_copy: src=jre-8u73-windows-x64.exe dest=c:/jre-8u73-windows-x64.exe
+    - name: Install Java
+      raw: 'c:\jre-8u73-windows-x64.exe /s'
+    - name: Set Env Variable
+      win_environment:
+          state: present
+          name: JAVA_HOME
+          value: 'C:\Program Files\Java\jre1.8.0_73'
+          level: machine
