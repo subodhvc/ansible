@@ -2,7 +2,7 @@
 # This playbook tests the script module on Windows hosts
 
 - name: Start Windows Service
-  hosts: windows
+  hosts:
   gather_facts: false
   tasks:
 #    - name: Run powershell script 
