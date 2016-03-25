@@ -1,6 +1,0 @@
----
-- name: Copy File
-  hosts: schagent
-  tasks:
-    - name: Copy File
-      win_copy: src=C:/Copy1/test.txt dest=C:/Copy2/test.txt
