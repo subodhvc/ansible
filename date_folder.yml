@@ -3,4 +3,4 @@
   hosts: all
   tasks:
     - name: Run Powershell command to create folder with date
-      raw: New-Item -ItemType Directory -Path ".\$((Get-Date).ToString('yyyy-MM-dd'))"
+      raw: powershell New-Item -ItemType Directory -Path ".\$((Get-Date).ToString('yyyy-MM-dd'))"
