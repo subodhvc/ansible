@@ -1,0 +1,6 @@
+---
+- name: Install package
+  hosts: windows
+  tasks:
+    - name: Copy JAVA
+      win_copy: src=jre-8u73-windows-x64.exe dest=c:/jre-8u73-windows-x64.exe
