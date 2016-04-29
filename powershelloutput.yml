@@ -1,7 +1,6 @@
 ---
 # Playbook to get outut from any command
 - name: Run command
-  hosts: windows
   tasks:
     - name: Run command
       raw: 'dir c:\'
