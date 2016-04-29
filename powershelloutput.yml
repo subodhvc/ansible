@@ -1,6 +1,7 @@
 ---
 # Playbook to get outut from any command
 - name: Run command
+  hosts: all
   tasks:
     - name: Run command
       raw: 'dir c:\'
