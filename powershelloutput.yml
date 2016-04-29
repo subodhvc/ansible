@@ -4,6 +4,6 @@
   hosts: windows
   tasks:
     - name: Run command
-      raw: "dir c:\"
-#      register: out
-#    - debug: var=out.stdout_lines
+      raw: 'dir c:\'
+      register: out
+    - debug: var=out.stdout_lines
