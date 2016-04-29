@@ -7,4 +7,3 @@
       raw: "dir c:\"
       register: out
     - debug: var=out.stdout_lines
-    
