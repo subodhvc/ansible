@@ -1,0 +1,4 @@
+---
+- name: Remove File
+  win_file: path=c:\jre-8u92-windows-x64.exe state=absent
+  
