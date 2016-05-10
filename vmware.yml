@@ -1,0 +1,14 @@
+---
+# This playbook creates a VM from template
+
+- name: Run powershell script
+  hosts: windows
+  gather_facts: false
+  tasks:
+    - name: Run powershell script
+      script: test.ps1
+#    - name: Start Service
+#      win_service:
+#        name: bits
+#        state: started
+
