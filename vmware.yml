@@ -6,13 +6,13 @@
   gather_facts: false
   tasks:
     - name: Create VM
-        vsphere_guest:
-        vcenter_hostname: dt-vcenter.dtitsupport247.net
-        username: administrator
-        password: cmspl@123
-        guest: Ansible001
-        from_template: yes
-        template_src: WIN2K8
-        esxi:
-          datacenter: Mumbai
-          hostname: 10.2.40.14
+        - vsphere_guest:
+          vcenter_hostname: dt-vcenter.dtitsupport247.net
+          username: administrator
+          password: cmspl@123
+          guest: Ansible001
+          from_template: yes
+          template_src: WIN2K8
+          esxi:
+            datacenter: Mumbai
+            hostname: 10.2.40.14
