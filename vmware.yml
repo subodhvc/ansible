@@ -12,6 +12,4 @@
       guest: Ansible001
       from_template: yes
       template_src: WIN2K8
-      esxi:
-        datacenter: Mumbai
-        hostname: 10.2.40.14
+
